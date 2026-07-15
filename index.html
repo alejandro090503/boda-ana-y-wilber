@@ -395,6 +395,15 @@ body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',ser
 .invite-verse p + p{margin-top:14px}
 .invite-verse-rut{font-family:'Pinyon Script',cursive!important;font-style:normal!important;font-size:clamp(22px,5.4vw,26px)!important;color:#6b5121!important;line-height:1.45!important;opacity:1!important;letter-spacing:.01em;margin-bottom:18px!important;padding-bottom:14px;border-bottom:1px solid var(--border-light);max-width:300px!important}
 .invite-verse-end{font-weight:500}
+/* ── VERSO COLOSENSES ── */
+.boda-verso{position:relative;max-width:350px;margin:0 auto;padding:36px 12px 0}
+.boda-verso::before{content:'\201C';position:absolute;top:-10px;left:50%;transform:translateX(-50%);font-family:'Pinyon Script',cursive;font-size:80px;line-height:1;background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:#9c7a3c;opacity:.45;pointer-events:none;user-select:none}
+.boda-verso-cita{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:clamp(19.5px,5.1vw,24px);line-height:1.65;color:var(--text);margin:0;padding:0;border:none;quotes:none;display:block}
+.boda-verso-ref{font-family:'Italiana',serif;font-size:12.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);display:block;margin-top:13px;opacity:.88}
+.boda-verso-sep{display:flex;align-items:center;gap:10px;max-width:220px;margin:26px auto}
+.boda-verso-sep::before,.boda-verso-sep::after{content:'';flex:1;height:1px;background:linear-gradient(to right,transparent,rgba(156,122,60,.38),transparent)}
+.boda-verso-sep-icon{width:5px;height:5px;background:var(--gold);transform:rotate(45deg);flex-shrink:0;opacity:.55}
+.boda-verso-msg{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(16.5px,4.3vw,20px);line-height:1.78;color:var(--text);opacity:.82;max-width:320px;margin:0 auto}
 
 /* ── COUNTDOWN GLOW ── */
 .cd-wrap{position:relative;max-width:380px;margin:0 auto}
@@ -571,6 +580,16 @@ body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',ser
     <span class="eyebrow stagger-child" style="margin-top:22px;font-size:12.5px;letter-spacing:.2em">Tenemos el honor de invitarles<br>a celebrar nuestra unión en matrimonio</span>
     <div class="orn bot stagger-child" style="margin-top:18px"><div class="orn-line"></div><div class="orn-diamond-sm"></div><div class="orn-diamond"></div><div class="orn-diamond-sm"></div><div class="orn-line"></div></div>
     <p class="stagger-child" style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:16px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);line-height:1.7;margin-top:16px">Sábado 28 de Noviembre de 2026</p>
+  </section>
+
+  <!-- VERSO & MENSAJE PERSONAL -->
+  <section class="sec-sm rv" style="text-align:center;background:var(--soft)">
+    <div class="boda-verso rv">
+      <blockquote class="boda-verso-cita">Y sobre todas estas cosas,<br>vestíos de amor,<br>que es el vínculo perfecto.</blockquote>
+      <span class="boda-verso-ref">— Colosenses 3:14</span>
+    </div>
+    <div class="boda-verso-sep rv"><div class="boda-verso-sep-icon"></div></div>
+    <p class="boda-verso-msg rv">Con gratitud a Dios y el corazón lleno de alegría,<br>te invitamos a celebrar el inicio de nuestra vida juntos.</p>
   </section>
 
   <!-- CUENTA REGRESIVA -->
