@@ -430,6 +430,10 @@ body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',ser
 .fam-rings{display:flex;justify-content:center;margin:14px 0 18px}
 .fam-rings svg{filter:drop-shadow(0 2px 8px rgba(156,122,60,.22));animation:ringsFloat 3.5s ease-in-out infinite}
 @keyframes ringsFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.pad-candle{display:flex;justify-content:center;margin:16px 0 0}
+.pad-candle svg{filter:drop-shadow(0 2px 8px rgba(156,122,60,.2));animation:candleGlow 4s ease-in-out infinite}
+@keyframes candleGlow{0%,100%{opacity:.85}50%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.fam-rings svg,.pad-candle svg{animation:none!important}}
 
 /* ── UBICACIÓN PIN ── */
 .loc-pin{display:flex;justify-content:center;margin:0 0 18px}
@@ -663,6 +667,25 @@ body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',ser
       <span class="fam-name">Idalia Del Refugio<br>Zamora García</span>
       <div class="fam-and"><div class="fam-and-line"></div><span class="fam-and-txt">y</span><div class="fam-and-line"></div></div>
       <span class="fam-name">Hugo Alberto<br>Alemán Villalobos</span>
+    </div>
+
+    <div class="orn" style="margin-top:38px;margin-bottom:0"><div class="orn-line"></div><div class="orn-diamond-sm"></div><div class="orn-diamond"></div><div class="orn-diamond-sm"></div><div class="orn-line"></div></div>
+    <span class="eyebrow rv" style="margin-top:24px">Nos acompañan</span>
+    <h2 class="heading-sm rv">Nuestros Padrinos</h2>
+    <div class="pad-candle rv">
+      <svg viewBox="0 0 44 42" width="62" height="59" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M15 9c0-2.6-3-3.4-3-6.2 0 0-2.6 2-2.6 4.4C9.4 9.6 11 10 11 12" stroke="#9c7a3c" stroke-width="1.2" opacity=".62" stroke-linecap="round"/>
+        <path d="M34.6 9c0-2.6-3-3.4-3-6.2 0 0-2.6 2-2.6 4.4C29 9.6 30.6 10 30.6 12" stroke="#9c7a3c" stroke-width="1.2" opacity=".62" stroke-linecap="round"/>
+        <rect x="8.6" y="13.5" width="5.6" height="24" rx="1.4" fill="rgba(156,122,60,.12)" stroke="#9c7a3c" stroke-width="1.2" opacity=".68"/>
+        <rect x="28.2" y="13.5" width="5.6" height="24" rx="1.4" fill="rgba(156,122,60,.12)" stroke="#9c7a3c" stroke-width="1.2" opacity=".68"/>
+        <path d="M21.4 20.5v11M17.4 24.2h8" stroke="#9c7a3c" stroke-width="1.2" opacity=".5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="fam-padrinos rv" style="max-width:340px;margin:18px auto 0">
+      <span class="fam-role-lbl">Padrinos de Velación</span>
+      <span class="fam-name">Pedro<br>Alemán Cardozo</span>
+      <div class="fam-and"><div class="fam-and-line"></div><span class="fam-and-txt">y</span><div class="fam-and-line"></div></div>
+      <span class="fam-name">Edith<br>Sánchez Camarena</span>
     </div>
   </section>
 
