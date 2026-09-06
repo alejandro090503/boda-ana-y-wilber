@@ -188,11 +188,11 @@ body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',ser
 .dc-fig-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;color:var(--text);opacity:.7;margin-top:-8px}
 .dc-avoid-wrap{margin-top:8px;padding-top:24px;border-top:1px solid rgba(138,95,60,.18);max-width:340px;margin-left:auto;margin-right:auto}
 .dc-avoid-lbl{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);text-align:center;display:block;margin-bottom:18px}
-.dc-avoid-row{display:flex;justify-content:center;gap:22px;margin-bottom:22px;flex-wrap:wrap}
+.dc-avoid-row{display:flex;justify-content:center;gap:14px;margin-bottom:22px;flex-wrap:wrap;max-width:320px;margin-left:auto;margin-right:auto}
 .dc-avoid-sw{display:flex;flex-direction:column;align-items:center;gap:8px}
-.dc-avoid-circle{width:38px;height:38px;border-radius:50%;box-shadow:0 2px 10px rgba(61,42,30,.18),inset 0 1px 2px rgba(255,255,255,.3);position:relative}
+.dc-avoid-circle{width:34px;height:34px;border-radius:50%;box-shadow:0 2px 10px rgba(61,42,30,.18),inset 0 1px 2px rgba(255,255,255,.3);position:relative}
 .dc-avoid-circle::after{content:'';position:absolute;inset:-3px;border-radius:50%;border:1px solid rgba(138,95,60,.35)}
-.dc-avoid-name{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:12px;color:var(--text);opacity:.72;text-align:center;max-width:60px;line-height:1.4}
+.dc-avoid-name{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:11.5px;color:var(--text);opacity:.85;text-align:center;width:54px;line-height:1.35}
 .dc-avoid-msg{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--text);text-align:center;line-height:1.7;opacity:.78;max-width:300px;margin:0 auto}
 .no-kids{display:flex;align-items:flex-start;gap:14px;border:1px solid var(--border);border-radius:4px;padding:18px 18px;margin-top:22px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:var(--dark);line-height:1.7;background:rgba(138,95,60,.04)}
 .no-kids svg{width:18px;height:18px;flex-shrink:0;margin-top:3px;stroke:var(--gold);stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
@@ -841,12 +841,9 @@ body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',ser
     </div>
 
     <div class="dc-palette-wrap rv">
-      <span class="dc-palette-lbl">Paleta sugerida</span>
+      <span class="dc-palette-lbl">Tono sugerido</span>
       <div class="dc-palette">
-        <div class="dc-chip"><div class="dc-chip-swatch" style="background:#E5C2B7"></div><span class="dc-chip-name">Almendra</span></div>
-        <div class="dc-chip"><div class="dc-chip-swatch" style="background:#C4A484"></div><span class="dc-chip-name">Chocolate</span></div>
-        <div class="dc-chip"><div class="dc-chip-swatch" style="background:#A47C53"></div><span class="dc-chip-name">Capuchino</span></div>
-        <div class="dc-chip"><div class="dc-chip-swatch" style="background:#61402E"></div><span class="dc-chip-name">Expresso</span></div>
+        <div class="dc-chip"><div class="dc-chip-swatch" style="background:#000000"></div><span class="dc-chip-name">Negro</span></div>
       </div>
     </div>
 
@@ -854,8 +851,12 @@ body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',ser
       <span class="dc-avoid-lbl">Agradecemos evitar estos tonos</span>
       <div class="dc-avoid-row">
         <div class="dc-avoid-sw"><div class="dc-avoid-circle" style="background:#ffffff"></div><span class="dc-avoid-name">Blanco</span></div>
+        <div class="dc-avoid-sw"><div class="dc-avoid-circle" style="background:#E5C2B7"></div><span class="dc-avoid-name">Almendra</span></div>
+        <div class="dc-avoid-sw"><div class="dc-avoid-circle" style="background:#C4A484"></div><span class="dc-avoid-name">Chocolate</span></div>
+        <div class="dc-avoid-sw"><div class="dc-avoid-circle" style="background:#A47C53"></div><span class="dc-avoid-name">Capuchino</span></div>
+        <div class="dc-avoid-sw"><div class="dc-avoid-circle" style="background:#61402E"></div><span class="dc-avoid-name">Expresso</span></div>
       </div>
-      <p class="dc-avoid-msg">Por favor evita vestir de blanco — ese color está reservado para la novia.</p>
+      <p class="dc-avoid-msg">El blanco está reservado para la novia, y los tonos café son la paleta de la boda. Agradecemos que los reserves para nosotros.</p>
     </div>
 
   </section>
@@ -958,9 +959,10 @@ body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',ser
     <div class="hotel-grid">
       <div class="hotel-card rv" style="padding:28px 22px">
         <span class="hotel-cat" style="margin-top:0">Hospedaje Sugerido</span>
-        <div class="hotel-name" style="margin-top:6px">Hotel Royal Garden</div>
+        <div class="hotel-name" style="margin-top:6px">Hotel Posada San Antonio</div>
+        <p class="loc-txt" style="opacity:.85;margin:0 18px 14px;font-size:15px;line-height:1.6">Calle Zaragoza #660, Zona Centro<br>Reynosa, Tamaulipas</p>
         <p class="loc-txt" style="opacity:.9;margin:0 18px 16px;font-size:16px;line-height:1.65">Te sugerimos este hotel si vienes de fuera de la ciudad. Recomendamos <strong>reservar con anticipación</strong> para asegurar tu habitación.</p>
-        <a href="https://www.google.com/maps/place/?q=place_id:ChIJAyaQdU0PZYYR2cU0xEgvCmQ" target="_blank" rel="noopener" class="btn-map" style="margin:0 16px 22px;width:calc(100% - 32px)">
+        <a href="https://www.google.com/maps/place/?q=place_id:ChIJu7-RLk4OZYYRRzGZ41RLKSQ" target="_blank" rel="noopener" class="btn-map" style="margin:0 16px 22px;width:calc(100% - 32px)">
           <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           Ver en Maps
         </a>
