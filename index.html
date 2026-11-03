@@ -1048,7 +1048,7 @@ body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',ser
 
       <div class="rsvp-deadline">
         <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5z"/></svg>
-        Fecha límite · 31 de Octubre 2026
+        Fecha límite · 15 de Noviembre 2026
       </div>
     </div>
   </section>
@@ -1275,7 +1275,7 @@ function initMain(){
   (function(){
     var PANEL_API = 'https://panel-invitados.vercel.app/api/confirmar';
     var RSVP_URL  = 'https://boda-ana-y-wilber.vercel.app';
-    var DEADLINE  = new Date(2026, 9, 31, 23, 59, 59, 999); /* 31 oct 2026 */
+    var DEADLINE  = new Date(2026, 10, 15, 23, 59, 59, 999); /* 15 nov 2026 */
     var frozen    = Date.now() > DEADLINE.getTime();
 
     /* Personalizacion robusta: WhatsApp y Messenger cortan la URL en el primer
